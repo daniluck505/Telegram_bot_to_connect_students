@@ -1,0 +1,6 @@
+pip install loguru
+pip install apscheduler
+pip install aiogram
+pip install memory_profiler
+pip install numpy
+pip install XlsxWriter

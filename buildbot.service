@@ -1,0 +1,14 @@
+[Unit]
+Description=build_network_bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 bot.py
+ExecReload=/usr/bin/python3 bot.py
+WorkingDirectory=/opt/build_bot/
+KillMode=process
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
